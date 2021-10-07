@@ -6,7 +6,7 @@ namespace assignment1.Models
         public static IEnumerable<GuestResponse> Responses => responses;
         public static void AddResponse(GuestReponse response)
         {
-            
+            responses.AddResponse(response);
         }
     }
 }
