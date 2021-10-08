@@ -25,8 +25,8 @@ namespace Assignment1.Controllers
         [HttpPost]
         public ViewResult RsvpForm(GuestResponse guestResponse)
         {
-            // todo: store response from guest
-            return View();
+            Repository.AddResponse(guestResponse);
+            return View("Thanks", guestResponse);
         }
     }
 }
